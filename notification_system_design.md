@@ -1,6 +1,6 @@
-# 📩 Notification System Design
+#  Notification System Design
 
-## 🧱 1. Architecture Overview
+##  1. Architecture Overview
 
 The Notification System is designed using a **modular backend architecture**. It processes incoming requests, logs them using middleware, and delivers notifications efficiently.
 
@@ -10,7 +10,7 @@ Client → API Layer → Logging Middleware → Notification Service → Databas
 
 ---
 
-## ⚙️ 2. Components
+##  2. Components
 
 ### 🔹 API Layer
 
@@ -23,7 +23,7 @@ Client → API Layer → Logging Middleware → Notification Service → Databas
 
 ---
 
-### 🔹 Logging Middleware
+###🔹 Logging Middleware
 
 * Logs every incoming request.
 * Captures:
@@ -36,7 +36,7 @@ Client → API Layer → Logging Middleware → Notification Service → Databas
 
 ---
 
-### 🔹 Notification Service
+##🔹 Notification Service
 
 * Core logic for sending notifications.
 * Processes the request data.
@@ -49,7 +49,7 @@ Client → API Layer → Logging Middleware → Notification Service → Databas
 
 ---
 
-### 🔹 Database
+### Database
 
 * Stores:
 
@@ -62,7 +62,7 @@ Client → API Layer → Logging Middleware → Notification Service → Databas
 
 ---
 
-## 🔄 3. Flow of Execution
+##  3. Flow of Execution
 
 1. **Request Received**
 
@@ -88,7 +88,7 @@ Client → API Layer → Logging Middleware → Notification Service → Databas
 
 ---
 
-## 📈 4. Scalability Considerations
+##  4. Scalability Considerations
 
 * Use message queues (e.g., Kafka, RabbitMQ) for high traffic.
 * Implement retry mechanisms for failed notifications.
@@ -96,7 +96,7 @@ Client → API Layer → Logging Middleware → Notification Service → Databas
 
 ---
 
-## 🔐 5. Reliability & Logging
+##  5. Reliability & Logging
 
 * Centralized logging ensures debugging is easy.
 * Middleware ensures every request is recorded.
@@ -104,7 +104,7 @@ Client → API Layer → Logging Middleware → Notification Service → Databas
 
 ---
 
-## ✅ 6. Conclusion
+##  6. Conclusion
 
 This system ensures:
 
