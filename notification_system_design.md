@@ -12,7 +12,7 @@ Client → API Layer → Logging Middleware → Notification Service → Databas
 
 ##  2. Components
 
-### 🔹 API Layer
+###  API Layer
 
 * Handles incoming HTTP requests.
 * Validates request data.
@@ -23,7 +23,7 @@ Client → API Layer → Logging Middleware → Notification Service → Databas
 
 ---
 
-###🔹 Logging Middleware
+### Logging Middleware
 
 * Logs every incoming request.
 * Captures:
@@ -36,7 +36,7 @@ Client → API Layer → Logging Middleware → Notification Service → Databas
 
 ---
 
-##🔹 Notification Service
+## Notification Service
 
 * Core logic for sending notifications.
 * Processes the request data.
